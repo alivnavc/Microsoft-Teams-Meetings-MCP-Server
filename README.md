@@ -18,8 +18,11 @@ A server to schedule, reschedule, cancel Microsoft Teams interviews, and manage 
 - (Optional) `uv` for running the server (install via `pip install uv`).
 - (Optional) `ngrok` for exposing the local server with HTTPS (required for OpenAI API integration).
 
+
+
 ## Installation
 
+### Using Repo Source Code
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/teams-mcp-server.git
@@ -77,7 +80,21 @@ A server to schedule, reschedule, cancel Microsoft Teams interviews, and manage 
     ```
     docker ps
     ```
+### Using PIP 
+1. pip install
+2. Use the below code
+   ```bash
+   from microsoft_teams_mcp import server
+   server.main({
+    "MS_TENANT_ID": "Tenant ID",
+    "MS_CLIENT_ID": "Client ID",
+    "MS_CLIENT_SECRET": "Client Secret",
+    "MS_USER_ID": "User Id"
+    
+   })
 
+   Run the command : python filename.py
+   ```
 ## Azure AD Setup for Microsoft Graph API
 
 To use the Microsoft Graph API, you need to register an application in Microsoft Azure AD and configure the necessary permissions. Follow these steps (summarized from [MS-Teams-setup.md](https://github.com/InditexTech/mcp-teams-server/blob/master/doc/MS-Teams-setup.md)):
