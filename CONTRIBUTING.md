@@ -11,7 +11,7 @@ Thank you for your interest in contributing to this project! We welcome contribu
 
 ### Pull Requests
 
-* Fork the repository and create your branch from `main` (or `master`).
+* Fork the repository and create your branch from `master`.
 * Make your changes with clear, concise commit messages.
 * Ensure your code follows the existing style and passes any tests.
 * Submit a pull request explaining your changes and why they improve the project.
