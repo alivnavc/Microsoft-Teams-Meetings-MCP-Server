@@ -81,7 +81,7 @@ A server to schedule, reschedule, cancel Microsoft Teams interviews, and manage 
     docker ps
     ```
 ### Using PIP 
-1. pip install
+1. pip install microsoft-teams-mcp==1.1.4
 2. Use the below code
    ```bash
    from microsoft_teams_mcp import server
