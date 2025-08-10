@@ -60,6 +60,23 @@ A server to schedule, reschedule, cancel Microsoft Teams interviews, and manage 
    ```bash
    uv run server.py
    ```
+6. Deploying through Docker(Optional)
+
+    Pull and Run Docker Image with .env file
+    ``` 
+    docker pull alivnavc/microsoft-teams-mcp
+
+    docker run -d -p 4200:4200 --name teams-mcp-server --env-file /path/to/.env alivnavc/microsoft-teams-mcp
+
+    ```
+    --env-file /path/to/.env loads environment variables from your local .env file into the container
+    (replace /path/to/.env with the actual path to your .env file)
+
+    Verify container is running
+
+    ```
+    docker ps
+    ```
 
 ## Azure AD Setup for Microsoft Graph API
 
